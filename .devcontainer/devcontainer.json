@@ -1,0 +1,26 @@
+{
+    "name": "AWS Development",
+    "image": "mcr.microsoft.com/devcontainers/universal:5-linux",
+    "features": {
+        "ghcr.io/devcontainers/features/aws-cli:1": {},
+        "ghcr.io/devcontainers/features/git-lfs:1": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/copilot-cli:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "github.copilot-chat",
+                "github.vscode-pull-request-github",
+                "github.codespaces",
+                "github.vscode-github-actions",
+                "github.remotehub",
+                "AmazonWebServices.aws-toolkit-vscode",
+                "kddejong.vscode-cfn-lint"
+            ]
+        }
+    },
+    "containerEnv": {"AWS_CONFIG_FILE": "${containerWorkspaceFolder}/.devcontainer/config"},
+    "postCreateCommand": ".devcontainer/postCreateCommand.sh",
+    "postAttachCommand": "aws sso login"
+}
