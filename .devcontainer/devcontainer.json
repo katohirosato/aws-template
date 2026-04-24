@@ -23,7 +23,7 @@
             ]
         }
     },
-    "containerEnv": {"AWS_CONFIG_FILE": "${containerWorkspaceFolder}/.devcontainer/config"},
+    "containerEnv": {"AWS_CONFIG_FILE": "${containerWorkspaceFolder}/.devcontainer/config", "CDK_APP": "${containerWorkspaceFolderBasename}"},
     "postCreateCommand": ".devcontainer/postCreateCommand.sh",
     "postStartCommand": ".devcontainer/postStartCommand.sh",
     "postAttachCommand": "aws sso login"
