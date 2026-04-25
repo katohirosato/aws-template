@@ -1,3 +1,5 @@
+#!/bin/bash
+cd "${CDK_APP}" && npm ci && cd - ;
 devcontainer templates apply --template-id ghcr.io/katohirosato/aws-dev/aws-dev --omit-paths '[ \
 ".git/*", \
 "README.md", \
@@ -5,7 +7,4 @@ devcontainer templates apply --template-id ghcr.io/katohirosato/aws-dev/aws-dev 
 "devcontainer-template.json", \
 "history.sh", \
 ".devcontainer/config" \
-]'
-cd ${CDK_APP}
-npm ci
-cd -
+]';
