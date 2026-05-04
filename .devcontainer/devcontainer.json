@@ -1,5 +1,5 @@
 {
-    "name": "Workspaces Prototype",
+    "name": "AWS Development",
     "image": "mcr.microsoft.com/devcontainers/universal:5-linux",
     "runArgs": ["--env-file", ".devcontainer/devcontainer.env"],
     "features": {
