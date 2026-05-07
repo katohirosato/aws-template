@@ -10,12 +10,10 @@ gh auth status > /dev/null 2>&1 || gh auth login --web --clipboard --git-protoco
 gh repo clone "$TEMPLATE_REPO" "$REPO_DIR" -- --depth 1
 
 cd "$REPO_DIR"
-rm -rf .git
+rm -rf .git/ README.md .github/workflows/template.yaml devcontainer-template.json history.sh startup.sh .devcontainer/config .devcontainer/.env
 git init -b main
-rm .github/workflows/template.yaml
-rm devcontainer-template.json
-rm history.sh
-rm startup.sh
 git add .
 git commit -m "first commit"
 gh repo create "$REPO" --private --source=. --remote=origin --push
+cd ..
+rm -rf "$REPO_DIR"
