@@ -17,5 +17,5 @@ rm devcontainer-template.json
 rm history.sh
 rm startup.sh
 git add .
-git commit -m "Initialize repository from template"
+git commit -m "first commit"
 gh repo create "$REPO" --private --source=. --remote=origin --push
