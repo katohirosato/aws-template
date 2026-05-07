@@ -1,7 +1,7 @@
 {
     "name": "AWS Development",
     "image": "mcr.microsoft.com/devcontainers/universal:5-linux",
-    "runArgs": ["--env-file", ".devcontainer/devcontainer.env"],
+    "runArgs": ["--env-file", ".devcontainer/.env"],
     "features": {
         "ghcr.io/devcontainers/features/aws-cli:1": {},
         "ghcr.io/devcontainers/features/git-lfs:1": {},
