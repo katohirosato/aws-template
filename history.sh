@@ -13,7 +13,7 @@ if [ ! -d .git ]; then
     git branch -M main
 fi
 [ -z "$(git config user.name)" ] && git config --local user.name katohirosato
-[ -z "$(git config user.email)" ] && git config --local user.email hirosato654@gmail.com
+[ -z "$(git config user.email)" ] && git config --local user.email ****@gmail.com
 git add .
 git commit -m "first commit"
 gh auth status > /dev/null 2>&1 || gh auth login --web --clipboard --git-protocol https
