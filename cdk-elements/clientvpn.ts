@@ -33,8 +33,8 @@ export class ClientVPN extends Construct {
     const clientVpnEndpoint = new ec2.ClientVpnEndpoint(this, 'ClientVpnEndpoint', {
       vpc: props.vpc,
       cidr: '10.1.0.0/16',
-      serverCertificateArn: 'arn:aws:acm:ap-northeast-1:395453697891:certificate/87715d14-d9d8-46d3-8763-ea54e980638e',
-      clientCertificateArn: 'arn:aws:acm:ap-northeast-1:395453697891:certificate/8381c5a3-34e6-4609-84df-28bf362540d1',
+      serverCertificateArn: '****',
+      clientCertificateArn: '****',
       logging: true,
       logGroup,
       logStream,
