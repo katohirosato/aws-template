@@ -20,7 +20,8 @@
                 "github.remotehub",
                 "AmazonWebServices.aws-toolkit-vscode",
                 "amazonwebservices.amazon-q-vscode",
-                "kddejong.vscode-cfn-lint"
+                "kddejong.vscode-cfn-lint",
+                "ms-python.python"
             ]
         }
     },
