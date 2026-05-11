@@ -1,5 +1,5 @@
 #!/bin/sh
-# usage: ./startup.sh [repo-name]
+# usage: ./startup.sh [repo]
 set -ue
 
 REPO="${1:-aws-app}"
@@ -16,4 +16,4 @@ git add .
 git commit -m "first commit"
 gh repo create "$REPO" --private --source=. --remote=origin --push
 cd ..
-# rm -rf "$REPO_DIR"
+rm -rf "$REPO_DIR"
