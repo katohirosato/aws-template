@@ -16,4 +16,4 @@ git add .
 git commit -m "first commit"
 gh repo create "$REPO" --private --source=. --remote=origin --push
 cd ..
-rm -rf "$REPO_DIR"
+# rm -rf "$REPO_DIR"
